@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Coding for the Web</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+box-sizing:border-box;
+}
+
+/* Style the body */
+body {
+font-family:Bahnschrift;
+margin:0;
+}
+
+/* Header */
+header {
+padding:10px;
+height:160px;
+padding:32px;
+font-size:20px;
+border:#000000;
+border-style:solid;
+border-width:2px;
+background:#83cbeb;
+color:#000000;
+}
+
+/* Style the top navigation bar */
+nav {
+height: 35px;
+gap:300px;
+padding:4px;
+font-size:18px;
+font-family:calibri;
+display:flex;
+justify-content: center;
+background-color:#c1e5f5;
+border:#000000;
+border-width:2px;
+border-style:solid;
+}
+
+/* Column container */
+section {  
+display:flex;
+flex-wrap:wrap;
+}
+
+/* Main column */
+.main {
+flex:40%;
+height:1340px;
+background-color:#ffffff;
+color: #000000;
+padding:20px;
+border:#000000;
+border-style:solid;
+border-width:2px;
+display: grid;
+grid-template:"A B";
+}
+
+#intText {
+    margin-left: 25px;
+    padding:50px;
+    font-size:20px;
+}
+
+.container {
+    border: 5px black solid;
+    border-radius: 10px;
+}
+
+.container p {
+    margin-left: 10px;
+}
+
+footer {
+font-size:20px;
+padding:40px;
+height:100px;
+background-color:#000000;
+color:#ffffff;
+display: grid;
+grid-template: "A B";
+}
+
+.footerLinks {
+    text-align: left;
+
+}
+
+.link {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#copyright {
+    text-align: right;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the <nav> and columns within <section> stack on top of each other */
+
+
+@media screen and (max-width: 700px) {
+
+nav, section  {
+    flex-direction: row;
+    gap: 30px;
+    
+}
+footer {
+    font-size: 14px;
+}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Coding for the Web</h1>
+</header>
+
+<nav>
+<a href="https://www.w3schools.com/csS/css3_flexbox.asp">Tutorial 1</a>
+<a href="https://en.wikipedia.org/wiki/CSS_Flexible_Box_Layout#History">Tutorial 2</a>
+<a href="https://www.kickstarter.com/projects/bigpotato/mine-turtle-its-a-blast">Tutorial 3</a>
+<a href="https://www.youtube.com/watch?v=DI5_sQ8O-7Y">Tutorial 4</a>
+<a href="https://www.youtube.com/watch?v=DI5_sQ8O-7Y">Tutorial 5</a>
+</nav>
+
+<section>
+
+
+
+
+<div class="main">
+
+    <div id="intText">
+        <h2>Lesson 1: Strings & Integers</h2>
+        <p>Let's start things off with something simple that you will need to know when coding in Python. Python has a lot of values called "Data Types" which determine how code is read, they are used to make sure that data is processed in a way that is suitable for the algorithm that the programmer intends to create. For this lesson, we will be diverting our focus to the two most commonly used data types in Python algorithms: Strings and Integers.</p>
+        <p> ------------------------------------------------------------------</p>
+        <h2>Strings</h2>
+        <p>A string is typically treated as a piece of written text, kind of like if you were to type in a message into a friend group. To create a string, all you need to do is make sure whatever you have written is in quotation marks. ("") In order to print out what you have written in your string, you will need to use the function "print()" and insert the string inside the brackets.</p>
+        <p>Here's an example of a string that is being printed using the print() function. The Input is the algorithm whereas the Output is what is created when the algorithm is ran.</p>
+        <div class="container">
+            <p>Input: | print("Hello World!")</p>
+        </div>
+        <p></p>
+        <div class="container">
+            <p>Output: | Hello World!</p>
+        </div>
+        <p>------------------------------------------------------------------</p>
+        <h2>Integers</h2>
+        <p>An integer is treated as a numerical value as opposed to a written one, like if you were to put two values in a calculator in order to figure out the result of a calculation. Creating an integer is as simple as using the function "int()" which only works if a number is used unless the value written in the brackets is a variable with a numerical value.</p>
+        <p>Here is an example of an integer being used for a calculation:</p>
+        <div class="container">
+            <p>Output: | Hello World!</p>
+        </div>
+        <p></p>
+        <div class="container">
+            <p>Output: | Hello World!</p>
+        </div>
+</div>
+
+</section>
+
+<footer>
+    <div class="footerLinks">
+        <a class="link" href="https://www.w3schools.com/csS/css3_flexbox.asp" style="color:#ffffff;">Canterbury College</a>
+        <a class="link" href="https://www.w3schools.com/csS/css3_flexbox.asp" style="color:#ffffff;">Privacy Policy</a>
+        <a class="link" href="https://www.w3schools.com/csS/css3_flexbox.asp" style="color:#ffffff;">Terms & Conditions</a>
+        <a class="link" href="https://www.w3schools.com/csS/css3_flexbox.asp" style="color:#ffffff;">Contact Us</a>
+    </div>
+    <div id="copyright">
+    Copyright &copy; 2025 Coding for the Web
+    </div>
+</footer>
+
+
+</body>
+</html>
+

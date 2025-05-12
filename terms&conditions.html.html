@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Coding for the Web</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+box-sizing:border-box;
+}
+
+/* Style the body */
+body {
+font-family:Bahnschrift;
+margin:0;
+}
+
+/* Header */
+header {
+padding:10px;
+height:160px;
+padding:32px;
+font-size:20px;
+border:#000000;
+border-style:solid;
+border-width:2px;
+background:#83cbeb;
+color:#000000;
+}
+
+/* Style the top navigation bar */
+nav {
+height: 35px;
+gap:300px;
+padding:4px;
+font-size:18px;
+font-family:calibri;
+display:flex;
+justify-content: center;
+background-color:#c1e5f5;
+border:#000000;
+border-width:2px;
+border-style:solid;
+}
+
+/* Column container */
+section {  
+display:flex;
+flex-wrap:wrap;
+}
+
+/* Main column */
+.main {
+flex:40%;
+height:670px;
+background-color:#ffffff;
+color: #000000;
+padding:20px;
+border:#000000;
+border-style:solid;
+border-width:2px;
+display: grid;
+grid-template:"A B";
+}
+
+#intVideo {
+    margin-left:20px;
+    padding:90px;
+}
+#intText {
+    margin-left: 25px;
+    padding:100px;
+    font-size:20px;
+}
+
+footer {
+padding:40px;
+height:100px;
+background-color:#000000;
+color:#ffffff;
+display: grid;
+grid-template: "A B";
+}
+
+.footerLinks {
+    text-align: left;
+
+}
+
+.link {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#copyright {
+    text-align: right;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the <nav> and columns within <section> stack on top of each other */
+
+
+@media screen and (max-width: 700px) {
+
+nav, section {
+    flex-direction: column;
+    height: auto;
+}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Coding for the Web</h1>
+</header>
+
+<nav>
+<a href="https://www.w3schools.com/csS/css3_flexbox.asp">Tutorial 1</a>
+<a href="https://en.wikipedia.org/wiki/CSS_Flexible_Box_Layout#History">Tutorial 2</a>
+<a href="https://www.kickstarter.com/projects/bigpotato/mine-turtle-its-a-blast">Tutorial 3</a>
+<a href="https://www.youtube.com/watch?v=DI5_sQ8O-7Y">Tutorial 4</a>
+<a href="https://www.youtube.com/watch?v=DI5_sQ8O-7Y">Tutorial 5</a>
+</nav>
+
+<section>
+
+
+
+
+<div class="main">
+    <div id="intVideo">
+        <iframe width="800" height="420" src="https://www.youtube.com/embed/x7X9w_GIm1s?si=dLWdqw6czZSTGYCJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div id="intText">
+        <h2>An Introduction to Coding in Python</h2>
+        <p>Coding is an important part of the advancement of technology, and it comes in many different forms. So it is a good idea to make up your mind on what kind of coding language you should use when programming.</p>
+        <p>On behalf of the EKC Canterbury College group, this website will teach you everything you need to know to get started with Python coding. There are five different tutorials that we will provide you with that will teach you how to code something in Python with clarity. However, it is highly advised to have had watched the following video on Python.</p>
+        <p>Good luck with your ambitions!</p>
+    </div>
+</div>
+
+
+
+</section>
+
+<footer>
+    <div class="footerLinks">
+        <a class="link" href="https://www.w3schools.com/csS/css3_flexbox.asp" style="color:#ffffff">Canterbury College</a>
+        <a class="link" href="https://www.w3schools.com/csS/css3_flexbox.asp" style="color:#ffffff">Privacy Policy</a>
+        <a class="link" href="https://www.w3schools.com/csS/css3_flexbox.asp" style="color:#ffffff">Terms & Conditions</a>
+        <a class="link" href="https://www.w3schools.com/csS/css3_flexbox.asp" style="color:#ffffff">Contact Us</a>
+    </div>
+    <div id="copyright">
+    Copyright &copy; 2025 Coding for the Web
+    </div>
+</footer>
+
+
+</body>
+</html>
