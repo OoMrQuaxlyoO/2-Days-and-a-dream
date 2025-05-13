@@ -146,26 +146,33 @@ footer {
         <h2>Lesson 3: For & While Loops</h2>
         <p></p>
         <p> ------------------------------------------------------------------</p>
-        <h2>For Loops</h2>
-        <p>A string is typically treated as a piece of written text, kind of like if you were to type in a message into a friend group. To create a string, all you need to do is make sure whatever you have written is in quotation marks. ("") In order to print out what you have written in your string, you will need to use the function "print()" and insert the string inside the brackets.</p>
-        <p>Here's an example of a string that is being printed using the print() function. The Input is the algorithm whereas the Output is what is created when the algorithm is ran.</p>
+        <h2>While Loops</h2>
+        <p>While loop are used to initiate code repeatedly until a determined condition is met. When the condition becomes false, the loop breaks and the line under the loop is executed. While loops are handy for when you set up a system where the user must enter data that must meet the conditions set in a while loop in order for them to progress, an example of this could be for creating an account for a website and you needing to create a password containing letters and/or numbers.</p>
+        <p>This example shows how you can limit a user to the size of a number that they can pick, by limiting them from any number from one to ten.</p>
         <div class="container">
-            <p>Input: | print("Hello World!")</p>
+            <p>x = input("Enter a number 1-10")</p>
+            <p>while x <= "0" or x >= "11":</p>
+            <p>‎ ‎ ‎ ‎‎ ‎ ‎ ‎ x = input("Enter a number 1-10")</p>    
+<p>else:</p>
+<p>print("Thank you!")</p>
         </div>
         <p></p>
         <div class="container">
-            <p>Output: | Hello World!</p>
+            <p>Output: | 1-10 = "Thank you!"</p>
+            <p>Else = "Enter a number 1-10"</p>
         </div>
         <p>------------------------------------------------------------------</p>
-        <h2>While Loops</h2>
-        <p>An integer is treated as a numerical value as opposed to a written one, like if you were to put two values in a calculator in order to figure out the result of a calculation. Creating an integer is as simple as using the function "int()" which only works if a number is used unless the value written in the brackets is a variable with a numerical value.</p>
-        <p>Here is an example of an integer being used for a calculation:</p>
+        <h2>For Loops</h2>
+        <p>For loops are slightly different to a while loop. Where while loops required you to break a certain condition before the next line of code can run, for loops will run through a list when started until every possible result is accounted for, terminating afterwards bringing the code back to the line below. This is useful whenever you make a list of values or names and want them to be outputted in a program.</p>
+        <p>Here's an example of a for loop in action:</p>
         <div class="container">
-            <p>Output: | Hello World!</p>
+            <p>Input: | x = "Duck"</p>
+            <p>for i in x:</p>
+            <p>‎ ‎ ‎ ‎‎ ‎ ‎ ‎print(i)</p>
         </div>
         <p></p>
         <div class="container">
-            <p>Output: | Hello World!</p>
+            <p>Output: | D u c k</p>
         </div>
 </div>
 
