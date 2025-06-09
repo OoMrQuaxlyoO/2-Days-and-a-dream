@@ -4,6 +4,7 @@
 <title>Coding for the Web</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="quiz.js"></script>
 <style>
 * {
 box-sizing:border-box;
@@ -52,7 +53,7 @@ flex-wrap:wrap;
 /* Main column */
 .main {
 flex:40%;
-height:1340px;
+height:1300px;
 background-color:#ffffff;
 color: #000000;
 padding:20px;
@@ -128,11 +129,11 @@ footer {
 </header>
 
 <nav>
-<a href="https://www.w3schools.com/csS/css3_flexbox.asp">Tutorial 1</a>
-<a href="https://en.wikipedia.org/wiki/CSS_Flexible_Box_Layout#History">Tutorial 2</a>
-<a href="https://www.kickstarter.com/projects/bigpotato/mine-turtle-its-a-blast">Tutorial 3</a>
-<a href="https://www.youtube.com/watch?v=DI5_sQ8O-7Y">Tutorial 4</a>
-<a href="https://www.youtube.com/watch?v=DI5_sQ8O-7Y">Tutorial 5</a>
+<a href="tutorial1.html.html">Tutorial 1</a>
+<a href="tutorial2.html (1).html">Tutorial 2</a>
+<a href="tutorial3.html.html">Tutorial 3</a>
+<a href="tutorial4.html.html">Tutorial 4</a>
+<a href="tutorial5.html.html">Tutorial 5</a>
 </nav>
 
 <section>
@@ -143,40 +144,49 @@ footer {
 <div class="main">
 
     <div id="intText">
-        <h2>Lesson 1: Strings & Integers</h2>
-        <p>Let's start things off with something simple that you will need to know when coding in Python. Python has a lot of values called "Data Types" which determine how code is read, they are used to make sure that data is processed in a way that is suitable for the algorithm that the programmer intends to create. For this lesson, we will be diverting our focus to the two most commonly used data types in Python algorithms: Strings and Integers.</p>
+        <h2>Lesson 5: If and Else statements</h2>
+        <p>For our final lesson, we will teach you the differences between If and Else statements. These statements are used when you want to create multiple different conditions when making an input</p>
         <p> ------------------------------------------------------------------</p>
-        <h2>Strings</h2>
-        <p>A string is typically treated as a piece of written text, kind of like if you were to type in a message into a friend group. To create a string, all you need to do is make sure whatever you have written is in quotation marks. ("") In order to print out what you have written in your string, you will need to use the function "print()" and insert the string inside the brackets.</p>
-        <p>Here's an example of a string that is being printed using the print() function. The Input is the algorithm whereas the Output is what is created when the algorithm is ran.</p>
+        <h2>If statements</h2>
+        <p>An if statement is used to make a condition that the user's or program's input will need to follow, if this condition is met then the program will continue to run the line below the if statement.</p>
+        <h2>Else statements</h2>
+        <p>An else statement is used to define what happens when the input does not meet any of the if statement conditions, the line below the else statement is what is used if no conditions were met.</p>
+        <p>When using if statements, it is important that you always use an else statement afterwards. If your code does not include an else statement then the code will not output a result if your input did not meet the criteria for an if statement. Here is an example of how if and else statements are used to authorise an input by setting a condition.</p>
         <div class="container">
-            <p>Input: | print("Hello World!")</p>
+            <p>Input: | x = 1</p>
+            <p>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ if (x > 0):</p>
+            <p>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ print("x is positive")</p>
+            <p>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ else:</p>
+            <p>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ print("x is 0 or negative")</p>
         </div>
         <p></p>
         <div class="container">
-            <p>Output: | Hello World!</p>
+            <p>Output: | # larger than 0
+            <p>print("x is positive")</p>
+            <p># 0 or lower</p>
+            <p>print("x is 0 or negative")</p>
         </div>
-        <p>------------------------------------------------------------------</p>
-        <h2>Integers</h2>
-        <p>An integer is treated as a numerical value as opposed to a written one, like if you were to put two values in a calculator in order to figure out the result of a calculation. Creating an integer is as simple as using the function "int()" which only works if a number is used unless the value written in the brackets is a variable with a numerical value.</p>
-        <p>Here is an example of an integer being used for a calculation:</p>
-        <div class="container">
-            <p>Output: | Hello World!</p>
-        </div>
-        <p></p>
-        <div class="container">
-            <p>Output: | Hello World!</p>
-        </div>
+                <div>
+    <br>
+    <div>What is Life?</div>
+    <br>
+    <button onclick="win()">Option 1</button>
+    <button onclick="lose()">Option 2</button>
+    <button onclick="lose()">Option 3</button>
+
+    <p></p>
+    <div id="winText">???</div>
+</div>
 </div>
 
 </section>
 
 <footer>
     <div class="footerLinks">
-        <a class="link" href="https://www.w3schools.com/csS/css3_flexbox.asp" style="color:#ffffff;">Canterbury College</a>
-        <a class="link" href="https://www.w3schools.com/csS/css3_flexbox.asp" style="color:#ffffff;">Privacy Policy</a>
-        <a class="link" href="https://www.w3schools.com/csS/css3_flexbox.asp" style="color:#ffffff;">Terms & Conditions</a>
-        <a class="link" href="https://www.w3schools.com/csS/css3_flexbox.asp" style="color:#ffffff;">Contact Us</a>
+        <a class="link" href="https://www.canterburycollege.ac.uk/" style="color:#ffffff">Canterbury College</a>
+        <a class="link" href="privacypolicy.html.html" style="color:#ffffff">Privacy Policy</a>
+        <a class="link" href="terms&conditions.html.html" style="color:#ffffff">Terms & Conditions</a>
+        <a class="link" href="https://www.canterburycollege.ac.uk/about-us/contact-us/" style="color:#ffffff">Contact Us</a>
     </div>
     <div id="copyright">
     Copyright &copy; 2025 Coding for the Web

@@ -4,6 +4,7 @@
 <title>Coding for the Web</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="quiz.js"></script>
 <style>
 * {
 box-sizing:border-box;
@@ -52,7 +53,7 @@ flex-wrap:wrap;
 /* Main column */
 .main {
 flex:40%;
-height:1340px;
+height:1500px;
 background-color:#ffffff;
 color: #000000;
 padding:20px;
@@ -128,11 +129,11 @@ footer {
 </header>
 
 <nav>
-<a href="https://www.w3schools.com/csS/css3_flexbox.asp">Tutorial 1</a>
-<a href="https://en.wikipedia.org/wiki/CSS_Flexible_Box_Layout#History">Tutorial 2</a>
-<a href="https://www.kickstarter.com/projects/bigpotato/mine-turtle-its-a-blast">Tutorial 3</a>
-<a href="https://www.youtube.com/watch?v=DI5_sQ8O-7Y">Tutorial 4</a>
-<a href="https://www.youtube.com/watch?v=DI5_sQ8O-7Y">Tutorial 5</a>
+<a href="tutorial1.html.html">Tutorial 1</a>
+<a href="tutorial2.html (1).html">Tutorial 2</a>
+<a href="tutorial3.html.html">Tutorial 3</a>
+<a href="tutorial4.html.html">Tutorial 4</a>
+<a href="tutorial5.html.html">Tutorial 5</a>
 </nav>
 
 <section>
@@ -157,16 +158,42 @@ footer {
         <div class="container">
             <p>Output: | 1</p>
         </div>
+        <p> ------------------------------------------------------------------</p>
+        <h2>Tuples</h2>
+        <p>Tuples are very similar to a list in the sense that they are also used to index and extract an object, the main difference between the two is that a tuple is an immutable sequence. (cannot be changed.)</p>
+        <p>Here is an example of an error where a program tries to change objects within a tuple:</p>
+        <div class="container">
+            <p>Input: | tup = ("a", "b", "c", "d", "e")</p>
+            <p>tup[5] = ("f")</p>
+        </div>
+        <p></p>
+        <div class="container">
+            <p>Output: | Traceback (most recent call last):</p>
+            <p>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ File "main.py", line 6, in < module ></p>
+            <p>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ tup[5] = ("f")</p>
+            <p>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ TypeError: 'tuple' object does not support item assignment</p>
+        </div>
+                <div>
+    <br>
+    <div>What is Life?</div>
+    <br>
+    <button onclick="win()">Option 1</button>
+    <button onclick="lose()">Option 2</button>
+    <button onclick="lose()">Option 3</button>
+
+    <p></p>
+    <div id="winText">???</div>
+</div>
 </div>
 
 </section>
 
 <footer>
     <div class="footerLinks">
-        <a class="link" href="https://www.w3schools.com/csS/css3_flexbox.asp" style="color:#ffffff;">Canterbury College</a>
-        <a class="link" href="https://www.w3schools.com/csS/css3_flexbox.asp" style="color:#ffffff;">Privacy Policy</a>
-        <a class="link" href="https://www.w3schools.com/csS/css3_flexbox.asp" style="color:#ffffff;">Terms & Conditions</a>
-        <a class="link" href="https://www.w3schools.com/csS/css3_flexbox.asp" style="color:#ffffff;">Contact Us</a>
+        <a class="link" href="https://www.canterburycollege.ac.uk/" style="color:#ffffff">Canterbury College</a>
+        <a class="link" href="privacypolicy.html.html" style="color:#ffffff">Privacy Policy</a>
+        <a class="link" href="terms&conditions.html.html" style="color:#ffffff">Terms & Conditions</a>
+        <a class="link" href="https://www.canterburycollege.ac.uk/about-us/contact-us/" style="color:#ffffff">Contact Us</a>
     </div>
     <div id="copyright">
     Copyright &copy; 2025 Coding for the Web
